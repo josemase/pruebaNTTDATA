@@ -1,0 +1,29 @@
+.container{
+  background-color: #c4f6f8;
+  position: absolute;
+  width: 400px;
+  height: 270px;
+  top: 30%;
+  left: 40%;
+  margin: -25px 0 0 -25px;
+  border-radius: 20px;
+  border-color: #f6eaea;
+  padding-top: 5px;
+}
+p{
+  font-size: 10px;
+  color: brown;
+}
+.labels{
+  font-size: 12px;
+}
+
+button{
+  width: 100%;
+}
+
+button:disabled {
+  background-color: grey;
+  color: #343a40;
+  border-color: grey;
+}

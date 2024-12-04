@@ -1,0 +1,14 @@
+div{
+  background-color: aqua;
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  top: 30%;
+  left: 45%;
+  margin: -25px 0 0 -25px;
+  border-radius: 20px;
+  border-color: cadetblue;
+}
+botton{
+  width: 100% !important;
+}

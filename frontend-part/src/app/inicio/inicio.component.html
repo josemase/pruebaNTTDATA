@@ -1,0 +1,23 @@
+<div *ngIf="isVisible" class="container">
+  <form (ngSubmit)="controlCambio()">
+    <fieldset>
+      <h6>Todos los campos son obligatorios</h6>
+      <div class="mb-3">
+        <label for="seleccion" class="form-label labels">tipo de documento</label>
+        <select id="seleccion" class="form-select" >
+          <option value="default">Seleccionar</option>
+          <option value="C">Cedula de ciudadania</option>
+          <option value="P">Pasaporte</option>
+        </select>
+        <p *ngIf="advertenciaSelect">Debe seleccionar un tipo de documento</p>
+      </div>
+      <div class="mb-3">
+        <label for="documento" class="form-label labels">Numero de documento</label>
+        <input type="text" id="documento" min="6" max="11" class="form-control" (input)="validateInput($event)" placeholder="Digite el # de documento" pattern="\d*">
+        <p *ngIf="advertencia">El documento debe tener entre 6 a 11 caracteres</p>
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="isButtonDisabled">Buscar</button>
+    </fieldset>
+  </form>
+</div>
+
